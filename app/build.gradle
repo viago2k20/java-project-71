@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'checkstyle'
 }
 
 group 'hexlet.code'
@@ -16,6 +17,10 @@ compileJava {
 
 application {
     mainClass = 'hexlet.code.App';
+}
+
+checkstyle {
+    toolVersion = '10.3.3'
 }
 
 dependencies {
